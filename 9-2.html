@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>บทที่ 1 ภาษาคอมพิวเตอร์ไพทอนคือ</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Tektur&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0"><a href="home.html">Python Info</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="home.html#hero">หน้าหลัก</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#why">ทำไมต้อง Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#learning">ทำความรู้จักกับ Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#education">เรียนรู้ภาษา Python</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+            <button class="book-a-table-btn scrollto d-none d-lg-flex"
+      style="color: white; background-color: black;"
+      name="logout" id="logout">Logout</button>
+
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <section class="breadcrumbs">
+            <div class="container"  >
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>บทที่ 9 Exception</h2>
+                    <ol>
+                        <li><a href="9-1.html">ย้อนกลับ</a></li>
+                        <li><a href="9-3.html">หน้าถัดไป</a></li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="exception1" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">Exception คือ</h3><br>
+                <p style="font-size: 17px"><b>&emsp;Exception </b>คือ
+                    เหตุการณ์ผิดปกติที่เกิดขึ้นระหว่างการประมวลผลของโปรแกรม
+                    ส่งผลให้โปรแกรมทำงานไม่เป็นไปตามขั้นตอนที่ได้กำหนดไว้<br>
+                    ตัวอย่างของ Exception เช่น<br>
+                    &emsp;- โค้ดของโปรแกรมมีการหารตัวเลขหนึ่ง ๆ ด้วยศูนย์ (divide by zero)<br>
+                    &emsp;- โปรแกรมพยายามเปิดไฟล์ที่ไม่มีอยู่จริง<br>
+                    &emsp;- โปรแกรมต้องการรับอินพุตเป็นเลขจำนวนเต็ม แต่ผู้ใช้โปรแกรมป้อนข้อมูลเข้ามาเป็นสตริง
+                </p>
+                <hr>
+            </div>
+        </section>
+
+        <section id="exception2" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">วิธีจัดการกับ Exception</h3><br>
+                <hr>
+                <h4>จัดการกับ Exception ด้วย try-except</h4>
+                <p style="font-size: 17px">&emsp;การดักจับ exception สามารถทำได้โดนง่าย เพียงแค่กำหนดบล็อคของ try-except
+                    ครอบส่วนของโปรแกรมที่คิดว่าอาจก่อให้เกิด exception ขึ้นเท่านั้น<br>
+                    รูปแบบของ try-except คือ<br>
+                    &emsp;try: <br>
+                    &emsp;&emsp;ส่วนของโปรแกรมที่อาจก่อให้เกิด Exception ขึ้น <br>
+                    &emsp;except exception1 : <br>
+                    &emsp;&emsp;สิ่งที่จะทำให้โปรแกรมทำเมื่อดักจับ exception ที่ 1 ได้ <br>
+                    &emsp;except exception2 : <br>
+                    &emsp;&emsp;สิ่งที่จะทำให้โปรแกรมทำเมื่อดักจับ exception ที่ 2 ได้ <br>
+                    &emsp;&emsp;... <br>
+                    &emsp;except exception n : <br>
+                    &emsp;&emsp;สิ่งที่จะทำให้โปรแกรมทำเมื่อดักจับ exception ตัวสุดท้ายได้
+                </p>
+                <hr>
+                <h4>จัดการกับ Exception ด้วย try-except-else</h4>
+                <p style="font-size: 17px">&emsp;เราสามารถนำคีย์เวิร์ด else มาใช้ร่วมกับการดักจับ Exception ได้
+                    โดยถ้าตรวจสอบไม่พบ Exception ใด ๆ โปรแกรมจะทำงานตามคำสั่งที่ระบุไว้ในส่วนของ else<br>
+                    รูปแบบของ try-except-else คือ<br>
+                    &emsp;try: <br>
+                    &emsp;&emsp;ส่วนของโปรแกรมที่อาจก่อให้เกิด Exception ขึ้น <br>
+                    &emsp;except exception1 : <br>
+                    &emsp;&emsp;สิ่งที่จะทำให้โปรแกรมทำเมื่อดักจับ exception ที่ 1 ได้ <br>
+                    &emsp;except exception2 : <br>
+                    &emsp;&emsp;สิ่งที่จะทำให้โปรแกรมทำเมื่อดักจับ exception ที่ 2 ได้ <br>
+                    &emsp;&emsp;... <br>
+                    &emsp;except exception n : <br>
+                    &emsp;&emsp;สิ่งที่จะทำให้โปรแกรมทำเมื่อดักจับ exception ตัวสุดท้ายได้<br>
+                    &emsp;else:<br>
+                    &emsp;&emsp;สิ่งที่จะให้ทำเมื่อตรวจสอบไม่พบ exception
+                </p>
+                <hr>
+                <h4>จัดการกับ Exception ด้วย try-except-finally</h4>
+                <p style="font-size: 17px">&emsp;เราสามารถนำคีย์เวิร์ด finally มาใช้ร่วมกับการดักจับ exception ไดเ
+                    โดยโปรแกรมจะทำงานตามคำสั่งที่ระบุไว้ในส่วนของ Finally เสมอไม่ว่าจะตรวจสอบพบ exception
+                    หรือไม่ก็ตาม<br>
+                    รูปแบบของ try-except-finally คือ<br>
+                    &emsp;try: <br>
+                    &emsp;&emsp;ส่วนของโปรแกรมที่อาจก่อให้เกิด Exception ขึ้น <br>
+                    &emsp;except exception1 : <br>
+                    &emsp;&emsp;สิ่งที่จะทำให้โปรแกรมทำเมื่อดักจับ exception ที่ 1 ได้ <br>
+                    &emsp;except exception2 : <br>
+                    &emsp;&emsp;สิ่งที่จะทำให้โปรแกรมทำเมื่อดักจับ exception ที่ 2 ได้ <br>
+                    &emsp;&emsp;... <br>
+                    &emsp;except exception n : <br>
+                    &emsp;&emsp;สิ่งที่จะทำให้โปรแกรมทำเมื่อดักจับ exception ตัวสุดท้ายได้<br>
+                    &emsp;finally:<br>
+                    &emsp;&emsp;สิ่งที่จะให้ทำเมื่อตรวจสอบพบหรือไม่พบ exception
+                </p>
+                <hr>
+                <h4>จัดการกับ Exception ด้วย try-except-raise</h4>
+                <p style="font-size: 17px">&emsp;นอกจากการจัดการกับ exception ด้วย try-except แล้ว
+                    เราสามารถตรวจสอบเงื่อนไขใด ๆ ในโปรแกรมด้วยตัวเอง เมื่อตรวจสอบพบข้อผิดพลาดก็สามารถใช้คีย์เวิร์ด raise
+                    แสดงข้อผิดพลาดแจ้งเตือนได้ด้วยตัวเอง<br>
+                    รูปแบบของ try-except-raise คือ<br>
+                    &emsp;raise Exception(msg[args,[,traceback]])<br>
+                <ul>
+                    <li style="font-size: 17px"><b>Exception </b>คือ ประเภทของความผิดพลาด</li>
+                    <li style="font-size: 17px"><b>msg </b>คือ ข้อความอธิบายข้อผิดพลาด</li>
+                    <li style="font-size: 17px"><b>args </b>คือ ค่าอาร์กิวเมนต์ที่ส่งไปยังคลาส Exception</li>
+                    <li style="font-size: 17px"><b>traceback </b>คือ สาเหตุที่ทำให้เกิดข้อผิดพลาด</li>
+                </ul>
+                </p>
+                <hr>
+            </div>
+        </section>
+    </main><!-- End #main -->
+
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCLLvS9zEbpiC77JdOl_N0tzzrYtolHoFw",
+      authDomain: "project-python-6f242.firebaseapp.com",
+      databaseURL: "https://project-python-6f242-default-rtdb.firebaseio.com",
+      projectId: "project-python-6f242",
+      storageBucket: "project-python-6f242.appspot.com",
+      messagingSenderId: "251706770772",
+      appId: "1:251706770772:web:ae1536725eea22006734c1"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
+    console.log(app);
+  
+        //----- Logout code start	  
+        document.getElementById("logout").addEventListener("click", function() {
+            signOut(auth).then(() => {
+                // Sign-out successful.
+                alert('Sign out successful.');
+          window.location.href='./index.html'
+                document.getElementById('logout').style.display = 'none';
+              }).catch((error) => {
+                // An error happened.
+                console.log('An error happened.');
+              });		  		  
+        });
+        //----- End
+  
+  </script>
+</html>

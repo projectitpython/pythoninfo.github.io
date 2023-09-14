@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  button {
+    position: relative;
+    width: 11em;
+    height: 4em;
+    outline: none;
+    transition: 0.1s;
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ddebf0;
+    text-align: center;
+  }
+
+  #clip {
+    --color: #2761c3;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 5px double var(--color);
+    box-shadow: inset 0px 0px 15px #195480;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+
+  .arrow {
+    position: absolute;
+    transition: 0.2s;
+    background-color: #2761c3;
+    top: 35%;
+    width: 11%;
+    height: 30%;
+  }
+
+  #leftArrow {
+    left: -13.5%;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  }
+
+  #rightArrow {
+    -webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);
+    left: 102%;
+  }
+
+  button:hover #rightArrow {
+    background-color: #27c39f;
+    left: -15%;
+    animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+  }
+
+  button:hover #leftArrow {
+    background-color: #27c39f;
+    left: 103%;
+    animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+  }
+
+  .corner {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    background-color: #2761c3;
+    box-shadow: inset 1px 1px 8px #2781c3;
+    transform: scale(1) rotate(45deg);
+    transition: 0.2s;
+  }
+
+  #rightTop {
+    top: -1.98em;
+    left: 91%;
+  }
+
+  #leftTop {
+    top: -1.96em;
+    left: -3.0em;
+  }
+
+  #leftBottom {
+    top: 2.10em;
+    left: -2.15em;
+  }
+
+  #rightBottom {
+    top: 45%;
+    left: 88%;
+  }
+
+  button:hover #leftTop {
+    animation: 0.1s ease-in-out 0.05s both changeColor8,
+      0.2s linear 0.4s both lightEffect8;
+  }
+
+  button:hover #rightTop {
+    animation: 0.1s ease-in-out 0.15s both changeColor8,
+      0.2s linear 0.4s both lightEffect8;
+  }
+
+  button:hover #rightBottom {
+    animation: 0.1s ease-in-out 0.25s both changeColor8,
+      0.2s linear 0.4s both lightEffect8;
+  }
+
+  button:hover #leftBottom {
+    animation: 0.1s ease-in-out 0.35s both changeColor8,
+      0.2s linear 0.4s both lightEffect8;
+  }
+
+  button:hover .corner {
+    transform: scale(1.25) rotate(45deg);
+  }
+
+  button:hover #clip {
+    animation: 0.2s ease-in-out 0.55s both greenLight8;
+    --color: #27c39f;
+  }
+
+  @keyframes changeColor8 {
+    from {
+      background-color: #2781c3;
+    }
+
+    to {
+      background-color: #27c39f;
+    }
+  }
+
+  @keyframes lightEffect8 {
+    from {
+      box-shadow: 1px 1px 5px #27c39f;
+    }
+
+    to {
+      box-shadow: 0 0 2px #27c39f;
+    }
+  }
+
+  @keyframes greenLight8 {
+    from {}
+
+    to {
+      box-shadow: inset 0px 0px 32px #27c39f;
+    }
+  }
+
+  @keyframes leftArrow8 {
+    from {
+      transform: translate(0px);
+    }
+
+    to {
+      transform: translateX(10px);
+    }
+  }
+
+  @keyframes rightArrow8 {
+    from {
+      transform: translate(0px);
+    }
+
+    to {
+      transform: translateX(-10px);
+    }
+  }
+
+  .svg-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .svg-frame svg {
+    position: absolute;
+    transition: .5s;
+    z-index: calc(1 - (0.2 * var(--j)));
+    transform-origin: center;
+    width: 344px;
+    height: 344px;
+    fill: none;
+  }
+
+  .svg-frame:hover svg {
+    transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+  }
+
+  .svg-frame svg #center {
+    transition: .5s;
+    transform-origin: center;
+  }
+
+  .svg-frame:hover svg #center {
+    transform: rotate(-30deg) translateX(45px) translateY(-3px);
+  }
+
+  #out2 {
+    animation: rotate16 7s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+
+  #out3 {
+    animation: rotate16 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    stroke: #ff0;
+  }
+
+  #inner3,
+  #inner1 {
+    animation: rotate16 4s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+
+  #center1 {
+    fill: #ff0;
+    animation: rotate16 2s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+
+  @keyframes rotate16 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Python info</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Tektur&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to Python info</h1>
+          <h2>Learning Python</h2>
+
+          <form action="login.html">
+            <button type="button" id="login" name="login">L O G I N
+              <div id="clip">
+                <div id="leftTop" class="corner"></div>
+                <div id="rightBottom" class="corner"></div>
+                <div id="rightTop" class="corner"></div>
+                <div id="leftBottom" class="corner"></div>
+              </div>
+              <span id="rightArrow" class="arrow"></span>
+              <span id="leftArrow" class="arrow"></span>
+            </button>
+          </form>
+
+          <form action="register.html">
+            <button type="button" id="register" name="register">R E G I S T E R
+              <div id="clip">
+                <div id="leftTop" class="corner"></div>
+                <div id="rightBottom" class="corner"></div>
+                <div id="rightTop" class="corner"></div>
+                <div id="leftBottom" class="corner"></div>
+              </div>
+              <span id="rightArrow" class="arrow"></span>
+              <span id="leftArrow" class="arrow"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section><!-- End Hero -->
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+<script>
+
+document.getElementById("login").addEventListener("click", function() {
+  window.location.href='./login.html'
+  });
+
+  document.getElementById("register").addEventListener("click", function() {
+	  window.location.href='./register.html'
+  });
+
+</script>
+</html>

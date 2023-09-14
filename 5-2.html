@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    table {
+        width: 100%;
+        font-size: 17px;
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+
+    tr {
+        border: 1px solid white;
+    }
+
+    th,
+    td {
+        padding-left: 20px;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>บทที่ 1 ภาษาคอมพิวเตอร์ไพทอนคือ</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Tektur&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0"><a href="home.html">Python Info</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="home.html#hero">หน้าหลัก</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#why">ทำไมต้อง Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#learning">ทำความรู้จักกับ Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#education">เรียนรู้ภาษา Python</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+            <button class="book-a-table-btn scrollto d-none d-lg-flex"
+      style="color: white; background-color: black;"
+      name="logout" id="logout">Logout</button>
+
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <section class="breadcrumbs">
+            <div class="container"  >
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>บทที่ 5 นิพจน์และตัวดำเนินการต่าง ๆ</h2>
+                    <ol>
+                        <li><a href="5-1.html">ย้อนกลับ</a></li>
+                        <li><a href="5-3.html">หน้าถัดไป</a></li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="mean" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">ความหมายของนิพจน์</h3>
+                <p style="font-size: 17px"><b>&emsp;นิพจน์ (Expression)</b> คือ การนำเอาโอเปอเรเตอร์ และโอเปอแรนด์หลาย ๆ
+                    ตัวมารวมเข้าด้วยกันเป็นประโยคเดียว<br>
+                    <b>&emsp;&emsp;โอเปอเรเตอร์ (Operator)</b> คือ ตัวดำเนินการ
+                    ซึ่งมักจะเป็นเครื่องหมายหรือสัญลักษณ์พิเศษต่าง ๆ เช่น +, -, *, /, &, |, >, < เป็นต้น<br>
+                        <b>&emsp;&emsp;โอเปอแรนด์ (Operand)</b> คือ ตัวถูกกระทำ อาจะเป็นค่าคงที่ ตัวแปร นิพจน์
+                        หรือฟังก์ชัน ก็ได้
+                </p>
+                <hr>
+            </div>
+        </section>
+
+        <section id="operater" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">ตัวดำเนินการ</h3><br>
+                <h4>&emsp;ตัวดำเนินการ หรือโอเปอเรเตอร์ในไพทอนแบ่งออกเป็น 7 ประเภท คือ</h4>
+                <p style="font-size: 17px"><b>&emsp;ตัวดำเนินการทางคณิตศาสตร์ (Arithmetic
+                        Operator)</b>&emsp;ตัวดำเนินการนี้จะใช้กับชนิดข้อมูลตัวเลข (Numberic) สำหรับคำนวณทางคณิตศาสตร์
+                    โดยแบ่งออกได้เป็น 7 ประเภท ดังนี้</p>
+                <hr>
+                <table style="width: 100%; font-size: 17px; text-align: center;">
+                    <tr style="border: 1px solid white;">
+                        <th>ตัวดำเนินการ</th>
+                        <th>ความหมาย</th>
+                        <th>ตัวอย่าง</th>
+                        <th>ผลลัพธ์</th>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>+</td>
+                        <td>บวก</td>
+                        <td>7+2</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>ลบ</td>
+                        <td>7-2</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>คูณ</td>
+                        <td>7*2</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>หาร</td>
+                        <td>7/2</td>
+                        <td>3.5</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>หารเอาเศษ</td>
+                        <td>7%2</td>
+                        <td>1 (เพราะ 7 หาร 2 เหลือเศษ 1)</td>
+                    </tr>
+                    <tr>
+                        <td>**</td>
+                        <td>ยกกำลัง</td>
+                        <td>7**2</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>//</td>
+                        <td>หารไม่เอาเศษ</td>
+                        <td>7//2</td>
+                        <td>3 (เพราะ 7 หาร 2 ได้ 3.5 จึงปัดเศษออกเหลือ 3)</td>
+                    </tr>
+                </table>
+                <hr>
+
+                <p style="font-size: 17px"><b>&emsp;ตัวดำเนินการตรรกศาสตร์ (Logical
+                        operators)</b>&emsp;ตัวดำเนินการประเภทนี้จะใช้สำหรับตรวจสอบนิพจน์มีค่าความจริงเป็น จริง (True)
+                    หรือ เท็จ (False)
+                    โดยแบ่งได้ 3 ประเภท ดังนี้</p>
+
+                <ul>
+                    <li style="font-size: 17px"><b>ตัวดำเนินการ and (และ)</b>&emsp;จะได้ค่าเป็น True เมื่อค่าโอเปอแรนด์
+                        A และ B เป็นจริงทั้งคู่</li>
+
+                    <li style="font-size: 17px"><b>ตัวดำเนินการ or (หรือ)</b>&emsp;จะได้ค่าเป็น True เมื่อค่าโอเปอแรนด์
+                        A หรือ B ตัวใดตัวหนึ่งเป็นจริง</li>
+
+                    <li style="font-size: 17px"><b>ตัวดำเนินการ not (นิเสธ)</b>&emsp;ถ้าโอเปอแรนด์เป็นจริง จะได้ค่าเป็น
+                        False แต่ถ้าโอเปอแรนด์เป็นเท็จ จะได้ค่าเป็น True</li>
+                </ul>
+                <hr>
+                <table style="width: 100%; font-size: 17px; text-align: center;">
+                    <tr style="border: 1px solid white;">
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A and B</th>
+                        <th>A or B</th>
+                        <th>not A</th>
+                        <th>not B</th>
+                    </tr>
+                    <tr>
+                        <td>True</td>
+                        <td>True</td>
+                        <td>True</td>
+                        <td>True</td>
+                        <td>False</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>True</td>
+                        <td>False</td>
+                        <td>False</td>
+                        <td>True</td>
+                        <td>False</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>True</td>
+                        <td>False</td>
+                        <td>True</td>
+                        <td>True</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>False</td>
+                        <td>False</td>
+                        <td>False</td>
+                        <td>True</td>
+                        <td>True</td>
+                    </tr>
+                </table>
+                <hr>
+                <p style="font-size: 17px"><b>&emsp;ตัวดำเนินการระดับบิต (Bitwise
+                        operators)</b>ตัวดำเนินการประเภทนี้จะใช้สำหรับเปรียบเทียบบิตของเลขฐานสอง โดยแบ่งได้เป็น 6 ประเภท
+                    ดังนี้</p>
+
+                <ul>
+                    <li style="font-size: 17px"><b>& (and)</b>&emsp;หมายถึง ถ้าบิตที่นำมาเปรียบเทียบกันมีค่าเป็น 1
+                        เหมือนกัน ผลลัพธ์จะได้ 1</li>
+
+                    <li style="font-size: 17px"><b>| (or)</b>&emsp;หมายถึง
+                        ถ้าบิตที่นำมาเปรียบเทียบกันมีบิตใดบิตหนึ่งเป็น 1 ผลลัพธ์จะได้ 1</li>
+
+                    <li style="font-size: 17px"><b>^ (xor)</b>&emsp;หมายถึง ถ้าบิตที่นำมาเปรียบเทียบกันมีค่าเหมือนกัน
+                        ผลลัพธ์จะได้ 0 แต่ถ้าบิตที่นำมาเปรียบเทียบกันมีค่าต่างกัน ผลลัพธ์จะได้ 1</li>
+
+                    <li style="font-size: 17px"><b>~ (not)</b>&emsp;หมายถึง ถ้าบิตมีค่าเป็น 0 ผลลัพธ์จะได้ 1
+                        แต่ถ้าบิตมีค่าเป็น 1 ผลลัพธ์จะได้ 0</li>
+
+                    <li style="font-size: 17px"><b>
+                            << (left shift)</b>&emsp;หมายถึง การเลื่อนบิตไปทางซ้ายโดยเติมบิต 0 เข้ามาทางขวา เช่น
+                                ถ้าเลื่อนบิตออกไปทางซ้าย 2 บิต ก็จะเติม 0 จำนวน 2 บิตเข้ามาทางด้านขวา</li>
+
+                    <li style="font-size: 17px"><b>>> (right shift)</b>&emsp;หมายถึง การเลื่อนบิตไปทางขวาโดยเติมบิต 0
+                        เข้ามาทางซ้าย เช่น
+                        ถ้าเลื่อนบิตออกไปทางขวา 2 บิต ก็จะเติม 0 จำนวน 2 บิตเข้ามาทางด้านซ้าย</li>
+                </ul>
+                <hr>
+                <table style="width: 100%; font-size: 17px; text-align: center;">
+                    <tr style="border: 1px solid white;">
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A & B</th>
+                        <th>A | B</th>
+                        <th>~ A</th>
+                        <th>~ B</th>
+                        <th>A ^ B</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+                <hr>
+                <p style="font-size: 17px"><b>&emsp;ตัวดำเนินการกำหนดค่า (Assignment operators)</b>&emsp;
+                    ตัวดำเนินการประเภทนี้ใช้สำหรับกำหนดค่าให้กับตัวแปร ซึ่งแบ่งออกได้เป็นหลายประเภท ดังนี้</p>
+                <hr>
+                <table style="width: 100%; font-size: 17px;">
+                    <tr style="border: 1px solid white;">
+                        <th>ตัวดำเนินการ</th>
+                        <th>ความหมาย</th>
+                        <th>ตัวอย่าง</th>
+                        <th>ผลลัพธ์</th>
+                    </tr>
+                    <tr>
+                        <td>=</td>
+                        <td>กำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>บวกค่าก่อนกำหนดค่าให้ตวแปร</td>
+                        <td>a = 4 a +=3 คือ a = a+3 จะได้ a = 4+3 </td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>ลบค่าก่อนกำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4 a -=3 คือ a = a-3 จะได้ a = 4-3 </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>คูณค่าก่อนกำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4 a *=3 คือ a = a*3 จะได้ a = 4*3 </td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>หารค่าก่อนกำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4 a /=3 คือ a = a/3 จะได้ a = 4/3 </td>
+                        <td>1.333333</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>หารค่าก่อนกำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4 a %=3 คือ a = a%3 จะได้ a = 4%3 </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>//=</td>
+                        <td>หารไม่เอาเศษก่อนกำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4 a //=3 คือ a = a//3 จะได้ a = 4//3 </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>**=</td>
+                        <td>ยกกำลังก่อนกำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4 a **=3 คือ a = a**3 จะได้ a = 4**3 </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>&=</td>
+                        <td>and ก่อนกำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4 (เลขฐานสองมีค่าเท่ากับ 0100) a &=3<br>(เลขฐานสองมีค่าเท่ากับ 0011) <br>คือ a = a&3
+                            จะได้ a = 0100 & 0011 </td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>|=</td>
+                        <td>or ก่อนกำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4 a |=3 คือ a = a|3 จะได้ a = 0100 | 0011 </td>
+                        <td>0111 (มีค่าเท่ากับเลข 7 ของฐานสิบ)</td>
+                    </tr>
+                    <tr>
+                        <td>^=</td>
+                        <td>xor ก่อนกำหนดค่าให้ตัวแปร</td>
+                        <td>a = 4 a ^=3 คือ a = a^3 จะได้ a = 0100 | 0011 </td>
+                        <td>0111 (มีค่าเท่ากับเลข 7 ของฐานสิบ)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <<=< /td>
+                        <td>left shift</td>
+                        <td>a = 4 a <<=3 คือ a=a<<3 </td>
+                        <td>0010 0000 (มีค่าเท่ากับเลข 32 ของฐานสิบ)</td>
+                    </tr>
+                    <tr>
+                        <td>>>=</td>
+                        <td>right shift</td>
+                        <td>a = 4 a >>=3 คือ a = a>>3 </td>
+                        <td>0000</td>
+                    </tr>
+                </table>
+                <hr>
+                <p style="font-size: 17px"><b>&emsp;ตัวดำเนินการเปรียบเทียบ (Comparison
+                        operators)</b>&emsp;ตัวดำเนินการประเภทนี้ใช้สำหรับการเปรียบเทียบค่า ผลลัพธ์จะได้เป็นค่าจริง
+                    (True) หรือ เท็จ (False)
+                    อย่างใดอย่างหนึ่ง ซึ่งตัวดำเนินการนี้แบ่งออกได้เป็น 6 ประเภท ดังนี้</p>
+                <hr>
+                <table style="width: 100%; font-size: 17px; text-align: center;">
+                    <tr style="border: 1px solid white;">
+                        <th>ตัวดำเนินการ</th>
+                        <th>ความหมาย</th>
+                        <th>ตัวอย่าง</th>
+                        <th>ผลลัพธ์</th>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>==</td>
+                        <td>เท่ากับ</td>
+                        <td>7==2</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>ไม่เท่ากับ</td>
+                        <td>7!=2</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>></td>
+                        <td>มากกว่า</td>
+                        <td>7>2</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            << /td>
+                        <td>น้อยกว่า</td>
+                        <td>7<2< /td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>>=</td>
+                        <td>มากกว่าหรือเท่ากับ</td>
+                        <td>7>=2</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <=< /td>
+                        <td>น้อยกว่าหรือเท่ากับ</td>
+                        <td>7<=2< /td>
+                        <td>False</td>
+                    </tr>
+
+                </table>
+                <hr>
+                <p style="font-size: 17px"><b>&emsp;ตัวดำเนินการเอกลักษณ์(Identity
+                        operators)</b>&emsp;ตัวดำเนินการประเภทนี้ใช้สำหรัยบเปรียบเทียบว่าตัวแปรชี้ไปยังออบเจ็คเดียวกันหรือไม่
+                    ซึ่งแบ่งได้เป็น 2 ประเภท ดังนี้</p>
+
+                <ul>
+                    <li style="font-size: 17px"><b>is</b>&emsp;จะทำให้ผลลัพธ์เป็นจริง (True)
+                        เมื่อตัวแปรชี้ไปยังออบเจ็คเดียวกัน</li>
+
+                    <li style="font-size: 17px"><b>is not</b>&emsp;จะทำให้ผลลัพธ์เป็นจริง (True)
+                        เมื่อตัวแปรชี้ไปยังออบเจ็คคนละตัวกัน</li>
+                </ul>
+                <hr>
+                <p style="font-size: 17px"><b>&emsp;ตัวดำเนินการสมาชิก (Membership
+                        operators)</b>&emsp;ตัวดำเนินการประเภทนี้ใช้สำหรับตรวจสอบว่ามีข้อมูลที่ระบุอยู่ในออบเจ็คหรือไม่
+                    ซึ่งแบ่งออกได้เป็น 2 ประเภท ดังนี้</p>
+
+                <ul>
+                    <li style="font-size: 17px"><b>in</b>&emsp;จะทำให้ผลลัพธ์เป็นจริง (True) เมื่อพบค่าข้อมูลในออบเจ็ค
+                    </li>
+
+                    <li style="font-size: 17px"><b>not in</b>&emsp;จะทำให้ผลลัพธ์เป็นจริง (True)
+                        เมื่อไม่พบค่าข้อมูลในออบเจ็ค</li>
+                </ul>
+                <hr>
+            </div>
+        </section>
+
+
+        <section id="importance" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">ลำดับความสำคัญของตัวดำเนินการ</h3><br>
+                <p style="font-size: 17px">&emsp;ในนิพจน์หนึ่ง ๆ อาจมีตัวดำเนินการมากกว่า 1 ตัว
+                    และตัวดำเนินการแต่ละตัวมีลำดับความสำคัญแตกต่างกันออกไปดังตารางต่อไปนี้</p>
+                <hr>
+                <table style="width: 100%; font-size: 17px;">
+                    <tr style="border: 1px solid white;">
+                        <th style="text-align: center;">ลำดับความสำคัญ</th>
+                        <th style="text-align: center;">ตัวดำเนินการ</th>
+                        <th style="text-align: center;">ความหมาย</th>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td style="text-align: center;">1</td>
+                        <td>()</td>
+                        <td>วงเล็บ</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">2</td>
+                        <td>**</td>
+                        <td>ตัวดำเนินการทางคณิตศาสตร์</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">3</td>
+                        <td>~, +, -</td>
+                        <td>ตำดำเนินการระดับบิต</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">4</td>
+                        <td>*, /, %, //</td>
+                        <td>ตำดำเนินการทางคณิตศาสตร์</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">5</td>
+                        <td>+, -</td>
+                        <td>ตำดำเนินการทางคณิตศาสตร์</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">6</td>
+                        <td>>> , <<< /td>
+                        <td>ตัวดำเนินการระดับบิต</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">7</td>
+                        <td>&</td>
+                        <td>ตัวดำเนินการระดับบิต</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">8</td>
+                        <td>^, |</td>
+                        <td>ตัวดำเนินการระดับบิต</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">9</td>
+                        <td>
+                            <=, <,>, >=
+                        </td>
+                        <td>ตัวดำเนินการระดับบิต</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">10</td>
+                        <td>==, !=</td>
+                        <td>ตัวดำเนินการเปรียบเทียบ</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">11</td>
+                        <td>=, %=, /=, //=, -=, +=, *=, **=</td>
+                        <td>ตัวดำเนินการกำหนดค่า</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">12</td>
+                        <td>is, is not</td>
+                        <td>ตัวดำเนินการเอกลักษณ์</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">13</td>
+                        <td>in, not in</td>
+                        <td>ตัวดำเนินการสมาชิก</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">14</td>
+                        <td>not, or, and</td>
+                        <td>ตัวดำเนินการทางตรรกศาสตร์</td>
+                    </tr>
+
+
+                </table>
+                <hr>
+            </div>
+        </section>
+
+
+        <section id="convert" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">การแปลงชนิดข้อมูล</h3><br>
+                <h4>&emsp;Implicit type conversion</h4>
+                <p style="font-size: 17px">&emsp;คือ python interpreter
+                    จะแปลงชนิดของข้อมูลให้อยู่ในรูปแบบที่เหมาะสมโดยอัตโนมัติ ซึ่งกฏการแปลงชนิดข้อมูล คือ
+                    ชนิดของข้อมูลที่มีความละเอียดของข้อมูลต่ำกว่าจะถูกแปลงไปเป็นชนิดข้อมูลที่มีความละเอียดของข้อมูลสูงกว่าเสมอ<br>
+                    &emsp;เช่น ถ้าตัวแปร a มีชนิดข้อมูลเป็น Integer ส่วนตัวแปร b มีชนิดข้อมูลเป็น floating-point
+                    ถ้านำ a+b ไพทอนจะทำ implicit type conversion แปลงชนิดข้อมูลก่อน เพราะ a กับ b
+                    มีชนิดข้อมูลคนประเภทกัน<br>
+                    &emsp;ในทีนี้ชนิดข้อมูล floating-point มีความละเอียดสูงกว่า intergers
+                    เพราะเลขทศนิยมเก็บข้อมูลได้ละเอียดกว่าเลขจำนวนเต็ม
+                    ดังนั้น python interpreter จึงแปลงชนิดข้อมูลของตัวแปร a จาก integers ไปเป็น floating-point
+                    จากนั้นก็ทำการบกค่าตามปกติ ซึ่งผลลัพธ์ที่ได้จะมีชนิดข้อมูลเป็น floating-point</p>
+                <hr>
+                <h4>&emsp;Explicit type conversion</h4>
+                <p style="font-size: 17px">&emsp;Explicit type conversion เรียกอีกอย่างว่า type casting คือ
+                    ผู้เขียนโปรแกรมทำการแปลงชนิดข้อมูลด้วยตนเอง
+                    จากชนิดข้อมูลประเภทหน่งไปเป็นชนิดข้อมูลอีกประเภทหนึ่ง โดยไม่ทำให้ข้อมูลมีความละเอียดต่ำลง</p>
+                <hr>
+                <table style="width: 100%; font-size: 17px;">
+                    <tr style="border: 1px solid white;">
+                        <th style="text-align: center;">ฟังก์ชัน</th>
+                        <th style="text-align: center;">ความหมาย</th>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>int(x,base)</td>
+                        <td>ฟังก์ชันนี้ใช้แปลงค่าข้อมูลเป็นเลขจำนวนเต็ม<br>
+                            x คือ ข้อมูลที่ต้องการแปลง <br>
+                            base คือ เลขฐาน จะระบุเป็นฐานสอง ฐานสิบ ฐานแปด หรือฐานสิบหก ก็ได้ ถ้าไม่ระบุ จะหมายถึงฐานสิบ
+                        </td>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>float(x)</td>
+                        <td>ฟังก์ชันนี้ใช้แปลงค่าข้อมูลเป็นเลขจำนวนจริง<br>
+                            x คือ ข้อมูลที่ต้องการแปลง<br>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td style="width: 25%;">Complex(real,imaginary)</td>
+                        <td>ฟังก์ชันนี้ใช้แปลงค่าข้อมูลเป็นจำนวนเลขเชิงซ้อน<br>
+                            real คือ เลขจำนวนจริง<br>
+                            imaginary คือ จำนวนจินตภาพ<br>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>str(x)</td>
+                        <td>ฟังก์ชันนี้ใช้แปลงค่าข้อมูลเป็นสตริง<br>
+                            x คือ ข้อมูลที่ต้องการแปลง<br>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>set(x)</td>
+                        <td>ฟังก์ชันนี้ใช้แปลงค่าข้อมูลเป็นเซต<br>
+                            x คือ ข้อมูลที่ต้องการแปลง จะเป็นสตริง ลิสต์ หรือทูเพิลก็ได้
+                            แต่ไม่สามารถกำหนดค่าเป็นเลขจำนวนเต็มหรือเลขจำนวนจริงได้<br>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>tuple(x)</td>
+                        <td>ฟังก์ชันนี้ใช้แปลงค่าข้อมูลเป็นทูเพิล<br>
+                            x คือ ข้อมูลที่ต้องการแปลง จะเป็นสตริง เซต หรือลิสต์ก็ได้
+                            แต่ไม่สามารถกำหนดค่าเป็นเลขจำนวนเต็มหรือเลขจำนวนจริงได้<br>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>list(x)</td>
+                        <td>ฟังก์ชันนี้ใช้แปลงค่าข้อมูลเป็นลิสต์<br>
+                            x คือ ข้อมูลที่ต้องการแปลง จะเป็นสตริง เซต หรือทูเพิลก็ได้
+                            แต่ในสามารถกำหนดค่าเป็นเลขจำนวนเต็มหรือเลขจำนวนจริงได้<br>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>dict(x)</td>
+                        <td>ฟังก์ชันนี้ใช้แปลงค่าข้อมูลเป็นดิกชันนารี<br>
+                            x คือ ข้อมูลที่ที่ต้องการแปลงเป็นดิกชันนารี จะเป็นลิสต์หรือทูเพิลก็ได้
+                            แต่ไม่สามารถกำหนดเป็นเลขจำนวนเต็ม เลขจำนวนจริง สตริงหรือเซตได้<br>
+                    </tr>
+
+
+                </table>
+                <hr>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCLLvS9zEbpiC77JdOl_N0tzzrYtolHoFw",
+      authDomain: "project-python-6f242.firebaseapp.com",
+      databaseURL: "https://project-python-6f242-default-rtdb.firebaseio.com",
+      projectId: "project-python-6f242",
+      storageBucket: "project-python-6f242.appspot.com",
+      messagingSenderId: "251706770772",
+      appId: "1:251706770772:web:ae1536725eea22006734c1"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
+    console.log(app);
+  
+        //----- Logout code start	  
+        document.getElementById("logout").addEventListener("click", function() {
+            signOut(auth).then(() => {
+                // Sign-out successful.
+                alert('Sign out successful.');
+          window.location.href='./index.html'
+                document.getElementById('logout').style.display = 'none';
+              }).catch((error) => {
+                // An error happened.
+                console.log('An error happened.');
+              });		  		  
+        });
+        //----- End
+  
+  </script>
+</html>

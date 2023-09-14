@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    table {
+        width: 100%;
+        font-size: 17px;
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+
+    tr {
+        border: 1px solid white;
+    }
+
+    th,
+    td {
+        padding-left: 20px;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>บทที่ 1 ภาษาคอมพิวเตอร์ไพทอนคือ</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Tektur&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0"><a href="home.html">Python Info</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="home.html#hero">หน้าหลัก</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#why">ทำไมต้อง Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#learning">ทำความรู้จักกับ Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#education">เรียนรู้ภาษา Python</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+            <button class="book-a-table-btn scrollto d-none d-lg-flex" style="color: white; background-color: black;"
+                name="logout" id="logout">Logout</button>
+
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>บทที่ 3 ตัวแปร</h2>
+                    <ol>
+                        <li><a href="3-1.html">ย้อนกลับ</a></li>
+                        <li><a href="3-3.html">หน้าถัดไป</a></li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="mean" class="inner-page">
+            <div class="container">
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">ความหมายของตัวแปร</h3><br>
+                <p style="font-size: 17px"><b>&emsp;ตัวแปร (Variables)</b> คือ
+                    ชื่อที่กำหนดขึ้นเพื่อใช้อ้างอิงค่าข้อมูลบนหน่วยความจำ
+                    ซึ่งค่าข้อมูลนี้สามารถนำไปเรียกใช้ในโปรแกรมได้
+                    ทั้งนี้การประกาศชื่อตัวแปรขึ้นใช้งานจะเป็นไปตามกฏการตั้งชื่อของตัวแปร</p>
+                <hr>
+                <h4>&emsp;กฏการตั้งชื่อตัวแปรในภาษาไพทอน</h4>
+                <center><iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/zWmerluKSVk?si=i1NyCUHxPB71MMeM" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></center> <br>
+
+                <table style="width: 100%; font-size: 17px; text-align: center; border: 1px solid white;">
+                    <tr style="border: 1px solid white;">
+                        <th colspan="4">คำสงวนในการตั้งชื่อตัวแปร</th>
+                    </tr>
+                    <tr>
+                        <td>and</td>
+                        <td>as</td>
+                        <td>assert</td>
+                        <td>break</td>
+                    </tr>
+                    <tr>
+                        <td>class</td>
+                        <td>continue</td>
+                        <td>del</td>
+                        <td>elif</td>
+                    </tr>
+                    <tr>
+                        <td>else</td>
+                        <td>except</td>
+                        <td>false</td>
+                        <td>finally</td>
+                    </tr>
+                    <tr>
+                        <td>for</td>
+                        <td>from</td>
+                        <td>global</td>
+                        <td>if</td>
+                    </tr>
+                    <tr>
+                        <td>import</td>
+                        <td>in</td>
+                        <td>is</td>
+                        <td>lambda</td>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td>nonlocal</td>
+                        <td>not</td>
+                        <td>raise</td>
+                    </tr>
+                    <tr>
+                        <td>return</td>
+                        <td>or</td>
+                        <td>pass</td>
+                        <td>print</td>
+                    </tr>
+                    <tr>
+                        <td>try</td>
+                        <td>true</td>
+                        <td>while</td>
+                        <td>with</td>
+                    </tr>
+                    <tr>
+                        <td>yield</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </section>
+
+        <section id="set" class="inner-page">
+            <div class="container">
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">การกำหนดค่าให้กับตัวแปร</h3><br>
+                <p style="font-size: 17px">&emsp;การกำหนดค่าให้กับตัวแปรในภาษาไพทอนมีรูปแบบดังนี้<br></p>
+                <p style="font-size: 19px; text-align: center;">ชื่อตัวแปร = ค่าที่ต้องการกำหนดให้ตัวแปล</p>
+                <p style="font-size: 17px">
+                    ตัวอย่างเช่น <br>
+                    &emsp;&emsp;price = 100 <br>
+                    คำสั่งนี้จะมีผลทำให้ตัวแปร price ถูกประกาศขึ้น และถูกกำหนดให้มีชนิดข้อมูลเป็นเลขจำนวนเต็ม (Integer)
+                    หรือเรียกสั้น ๆ ว่า int โดยอัตโนมัติ
+                    ซึ่งตัวแปร price จะชี้อ้างอิงไปยังตำแหน่งบนหน่วยความจำที่เก็บค่าเลขจำนวนเต็ม 100 อยู่<br>
+                    &emsp;&emsp;name = "Orapin" <br>
+                    คำสั่งนี้จะมีผลทำให้ตัวแปร name ถูกประกาศขึ้น และถูกกำหนดให้เป็น string (สตริง) โดยอัตโนมัติ
+                    ซึ่งตัวแปร name
+                    จะชี้อ้างอิงไปยังตำแหน่งบนหน่วยความจำที่เก็บค่าข้อมูล Orapin อยู่</p>
+                <center>
+
+                    <img src="https://img-prod.api-onscene.com/cdn-cgi/image/format=auto%2Cwidth=1600%2Cheight=900/https://sls-prod.api-onscene.com/partner_files/trueidintrend/77630/21D3CCF4-FDB5-4D68-AE35-6DD76FB1A75F.jpeg"
+                        width="60%">
+                </center>
+                <br>
+                <div style="text-align: center;">
+                    <button class="input" style="text-align: center;">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_variables1"
+                            target="_blank">
+                            Try it
+                        </a>
+                    </button>
+                </div>
+                <hr>
+            </div>
+
+
+        </section>
+
+        <section id="sets" class="inner-page">
+            <div class="container">
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">การกำหนดค่าให้กับตัวแปรหลายตัว</h3><br>
+                <p style="font-size: 17px">ในภาษาไพทอนเราสามารถค่า 1 ค่าให้กับตัวแปรหลาย ๆ ตัวพร้อมกันได้ เช่น<br>
+                    &emsp;&emsp;a = b = c = 100 <br>
+                    หมายถึง กำหนดให้ตัวแปร a b และ c ชี้อ้างอิงไปยังตำแหน่งบนหน่วยความจำที่เก็บค่าข้อมูลเลขจำนวนเต็ม 10
+                    อยู่<br>
+                    &emsp;&emsp;name = "Orapin" <br>
+                    คำสั่งนี้จะมีผลทำให้ตัวแปร name ถูกประกาศขึ้น และถูกกำหนดให้เป็น string (สตริง) โดยอัตโนมัติ
+                    ซึ่งตัวแปร name
+                    จะชี้อ้างอิงไปยังตำแหน่งบนหน่วยความจำที่เก็บค่าข้อมูล Orapin อยู่</p>
+
+                <hr>
+            </div>
+
+        </section>
+
+        <section id="input" class="inner-page">
+            <div class="container">
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">ใช้ฟังก์ชัน input() รับข้อมูลเก็บลงในตัวแปร</h3><br>
+                <p style="font-size: 17px">&emsp;เมื่อใช้ฟังก์ชัน input() รับค่าข้อมูลจากผู้ใช้งานโปรแกรมแล้ว
+                    เราสามารถนำค่านั้นมาจัดเก็บลงในตัวแปรได้ ดังนี้<br></p>
+                <p style="font-size: 19px; text-align: center;">ชื่อตัวแปร = input(ข้อความที่จะแสดงก่อนรับค่าข้อมูล)</p>
+                <center>
+                    <img src="https://s11.gifyu.com/images/ScXgA.png" width="60%">
+                </center>
+                <br>
+                <div style="text-align: center;">
+                    <button class="input" style="text-align: center;">
+                        <a href="https://www.w3schools.com/python/showpython.asp?filename=demo_ref_input"
+                            target="_blank">
+                            Try it
+                        </a>
+                    </button>
+                </div>
+
+                <hr>
+            </div>
+        </section>
+
+        <section id="convert" class="inner-page">
+            <div class="container">
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">การเปลี่ยนแปลงค่าของตัวแปร</h3><br>
+                <p style="font-size: 17px">&emsp;เมื่อมีการกำหนดค่าให้กับตัวแปร
+                    ตัวแปรนั้นก็จะถูกสร้างขึ้นพร้อมทั้งถูกกำหนดชนิดข้อมูลให้โดยอัตโนมัติตามข้อมูลที่ตัวแปรนั้นชี้อ้างอิงอยู่<br>
+                    แต่หากต่อมามีการกำหนดค่าใหม่ให้กับตัวแปร
+                    ชนิดข้อมูลของตัวแปรนั้นก็จะเปลี่ยนแปลงไปตามค่าใหม่ที่กำหนดให้</p>
+                <table style="width: 100%; font-size: 17px;">
+                    <tr style="border: 1px solid white;">
+                        <th>คำสั่ง</th>
+                        <th>ผลลัพธ์</th>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>x = 100<br>print(x)</td>
+                        <td rowspan="2">100</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>y = x<br>print(y)</td>
+                        <td rowspan="2">100</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>y = 200<br>print(y)</td>
+                        <td rowspan="2">200</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr style="border: 1px solid white;">
+                        <td>y = "abc"<br>print(y)</td>
+                        <td rowspan="2">abc</td>
+                    </tr>
+                </table>
+                <br>
+                <div style="text-align: center;">
+                    <button class="input" style="text-align: center;">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_variables2"
+                            target="_blank">
+                            Try it
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+    </main><!-- End #main -->
+
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyCLLvS9zEbpiC77JdOl_N0tzzrYtolHoFw",
+        authDomain: "project-python-6f242.firebaseapp.com",
+        databaseURL: "https://project-python-6f242-default-rtdb.firebaseio.com",
+        projectId: "project-python-6f242",
+        storageBucket: "project-python-6f242.appspot.com",
+        messagingSenderId: "251706770772",
+        appId: "1:251706770772:web:ae1536725eea22006734c1"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
+    console.log(app);
+
+    //----- Logout code start	  
+    document.getElementById("logout").addEventListener("click", function () {
+        signOut(auth).then(() => {
+            // Sign-out successful.
+            alert('Sign out successful.');
+            window.location.href = './index.html'
+            document.getElementById('logout').style.display = 'none';
+        }).catch((error) => {
+            // An error happened.
+            console.log('An error happened.');
+        });
+    });
+    //----- End
+
+</script>
+
+</html>

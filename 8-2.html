@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>บทที่ 1 ภาษาคอมพิวเตอร์ไพทอนคือ</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Tektur&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0"><a href="home.html">Python Info</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="home.html#hero">หน้าหลัก</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#why">ทำไมต้อง Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#learning">ทำความรู้จักกับ Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#education">เรียนรู้ภาษา Python</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+            <button class="book-a-table-btn scrollto d-none d-lg-flex"
+      style="color: white; background-color: black;"
+      name="logout" id="logout">Logout</button>
+
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <section class="breadcrumbs">
+            <div class="container"  >
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>บทที่ 8 ฟังก์ชันและโมดูล</h2>
+                    <ol>
+                        <li><a href="8-1.html">ย้อนกลับ</a></li>
+                        <li><a href="8-3.html">หน้าถัดไป</a></li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="function" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">Function</h3><br>
+                <p style="font-size: 17px">ฟังก์ชันในไพทอนแบ่งออกได้เป็น 2 ประเภท คือ<br></p>
+
+                <h4>User-define function</h4>
+
+                <p style="font-size: 17px">1.User-define function คือ บล็อคการทำงานของโปรแกรมที่ถูกสร้างขึ้น
+                    เราเรียกบล็อคการทำงานนี้ว่า ฟังก์ชัน ซึ่งฟังก์ชันที่สร้างขึ้นจะยังไม่มีการทำงานใด ๆ
+                    จนกว่าจะมีส่วนของโค้ดโปรแกรมระบุเรียกฟังก์ชันเท่านั้น ฟังก์ชันจึงจะถูกเรียกให้ทำงาน<br>
+
+                    เราสามารถส่งค่าข้อมูลเข้าไปในฟังก์ชันได้ โดยฟังก์ชันจะกำหนดตัวแปรที่เรียกว่า "พารามิเตอร์" ขึ้นมา
+                    เพื่อใช้สำหรับรับข้อมูลเข้าไปในฟังก์ชัน<br>
+
+                    เมื่อฟังก์ชันทำงานเสร็จแล้ว จะส่งค่าข้อมูลกลับออกไปจากฟังก์ชันหรือไม่ก็ได้
+                    ถ้าต้องการส่งข้อมูลกลับออกไปจากฟังก์ชัน ทำได้โดยใช้คำสั่ง return</p>
+                <hr>
+                <h4>&emsp;การสร้างฟังก์ชัน</h4>
+                <p style="font-size: 17px">สามารถสร้างฟังก์ชันได้ด้วยรูปแบบดังต่อไปนี้ <br>
+                    &emsp;def ชื่อฟังก์ชัน() :
+                    &emsp;&emsp;คำสั่งการทำงานต่าง ๆ ภายในฟังก์ชัน </p>
+                <hr>
+                <h4>&emsp;การเรียกฟังก์ชันให้ทำงาน</h4>
+                <p style="font-size: 17px">สามารถเรียกฟังก์ชันให้ทำงานได้ด้วยรูปแบบดังต่อไปนี้ <br>
+                    &emsp;ชื่อฟังก์ชัน ()
+                    <hr>
+                    <b>ตัวอย่าง การสร้างฟังก์ชันและเรียกใช้งานฟังก์ชัน</b><br><br>
+
+                <table style="width:80%;   margin-left: auto; margin-right: auto; padding: 10px;">
+                    <tr style="font-size: 20px; margin-left: auto;">
+                        <td style="width:33%; text-align: center;">Code</td>
+                        <td style="width:33%;"></td>
+                        <td style="width:33%; text-align: center;">ผลลัพธ์</td>
+                    </tr>
+                    <tr>
+                        <td>def greeting() :<br>
+                            &emsp;&emsp;print("สวัสดีค่ะ ยินดีต้อนรับ")<br>
+                            &emsp;&emsp;print("ขอให้มีความสุขกับบริการของเรา")<br>
+                            &emsp;greeting():
+                        </td>
+
+                        <td style="text-align: center;"><img src="https://s11.gifyu.com/images/ScyFl.png"  width="80%">
+                        </td>
+
+                        <td style="text-align: center;">&emsp;&emsp;สวัสดีค่ะ ยินดีต้อนรับ<br>
+                            &emsp;&emsp;ขอให้มีความสุขกับบริการของเรา
+                        </td>
+                    </tr>
+                </table>
+                <br>
+<div style="text-align: center;">
+                    <button class="input" style="text-align: center;">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_function"
+                            target="_blank">
+                            Try it
+                        </a>
+                    </button>
+                </div>
+                <hr>
+
+                <h4>&emsp;การกำหนดพารามิเตอร์ของฟังก์ชัน</h4>
+                <p style="font-size: 17px"><b>พารามิเตอร์</b><br>คือ ตัวแปรที่ใช้รับข้อมูลเข้ามาในฟังก์ชัน
+                    การกำหนดพารามิเตอร์ของฟังก์ชันทำได้ดังรูปแบบดังต่อไปนี้<br>
+                    &emsp;def ชื่อฟังก์ชัน (พารามิเตอร์ตัวที่1, พารามิเตอร์ตัวที่2,...,พารามิเตอร์ตัวสุดท้าย): <br>
+                    &emsp;&emsp;คำสั่งการทำงานต่าง ๆ ภายในฟังก์ชัน<br>
+                    <hr>
+                    <b>ตัวอย่าง โปรแกรมรับพารามิเตอร์เข้ามาในฟังก์ชันเพื่อหาผลบวก</b><br><br>
+                <table style="width:80%;   margin-left: auto; margin-right: auto; padding: 10px;">
+                    <tr style="font-size: 20px; margin-left: auto;">
+                        <td style="width:33%; text-align: center;">Code</td>
+                        <td style="width:33%;"></td>
+                        <td style="width:33%; text-align: center;">ผลลัพธ์</td>
+                    </tr>
+                    <tr>
+                        <td>def plus(num1, num2):<br>
+                            &emsp;&emsp;print("num 1 = ",num1)<br>
+                            &emsp;&emsp;print("num 2 = ",num2)<br>
+                            &emsp;&emsp;print("num1+num 2 = ",num1+num2)<br>
+                            plus(1,2)<br>
+                            plus(3,4)
+                        </td>
+
+                        <td style="text-align: center;"><img src="https://s11.gifyu.com/images/ScyFl.png"  width="80%">
+                        </td>
+
+                        <td style="text-align: center;">num 1 = 1<br>
+                            num 2 = 2<br>
+                            num1+num2 = 3<br>
+                            num 1 = 3<br>
+                            num 2 = 4<br>
+                            num1+num2 = 7
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+
+                <h4>&emsp;การกำหนดค่า default ของพารามิเตอร์ในฟังก์ชัน</h4>
+                <p style="font-size: 17px"><b>ค่า default</b><br>คือ ค่าที่เรากำหนดไว้แล้ว โดยเราสามารถกำหนดค่า default
+                    ให้กับพารามิเตอร์ของฟังก์ชันได้ ในกรณีที่ไม่มีการส่งค่าข้อมูลใดเข้ามาในฟังก์ชัน
+                    พารามิเตอร์นั้นจะถูกกำหนดค่าเป็นค่า default<br>
+                    การกำหนดค่า default ของพารามิเตอร์ ทำได้ดังรูปแบบดังต่อไปนี้<br>
+                    &emsp;def ชื่อฟังก์ชัน (พารามิเตอร์ตัวที่ 1 = ค่า default,...,พารามิเตอร์ตัวสุดท้าย = ค่า
+                    default):<br>
+                    &emsp;&emsp;คำสั่งการทำงานต่าง ๆ ภายในฟังก์ชัน
+                    <hr>
+                    <b>ตัวอย่าง โปรแกรมแสดงการกำหนดค่า default ของพารามิเตอร์</b><br>
+                <table style="width:80%;   margin-left: auto; margin-right: auto; padding: 10px;">
+                    <tr style="font-size: 20px; margin-left: auto;">
+                        <td style="width:33%; text-align: center;">Code</td>
+                        <td style="width:33%;"></td>
+                        <td style="width:33%; text-align: center;">ผลลัพธ์</td>
+                    </tr>
+                    <tr>
+                        <td>def information(nationality="ไทย"):<br>
+                            &emsp;&emsp;print("ฉันสัญชาติ"+nationality)<br>
+                            information("ไทย")<br>
+                            information("อินเดียน")<br>
+                            information("ออสเตรเลียน")<br>
+                            information()
+                        </td>
+
+                        <td style="text-align: center;"><img src="https://s11.gifyu.com/images/ScyFl.png"  width="80%">
+                        </td>
+
+                        <td style="text-align: center;">ฉันสัญชาติไทย<br>
+                            ฉันสัญชาติอินเดียน<br>
+                            ฉันสัญชาติออสเตรเลียน<br>
+                            ฉันสัญชาติไทย
+                        </td>
+                    </tr>
+                </table>
+                <br>
+<div style="text-align: center;">
+                    <button class="input" style="text-align: center;">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_function_args_n"
+                            target="_blank">
+                            Try it
+                        </a>
+                    </button>
+                </div>
+                <hr>
+
+                <h4>Built-in functions</h4>
+
+                <p style="font-size: 17px">&emsp;2.Built-in functions คือ ฟังก์ชันที่ Python interpreter
+                    ได้จัดเตรียมไว้ให้เรียกใช้งาน ซึ่งมีอยู่มากมายหลายฟังก์ชัน
+                    ตัวอย่างฟังก์ชันที่เราได้ศึกษาไปก่อนหน้านี้แล้วได้แก่
+                    input() print() int() float() complex() str() tuple() set() dict() และ range() เป็นต้น<br>
+                    ในทีนี้จะขอกล่าวถึงฟังก์ชันอื่น ๆ ที่ถูกใช้งานบ่อย ดังนี้</p>
+                <hr>
+                <table style="width: 100%; font-size: 17px; border: 2px solid white;">
+                    <tr style="border: 2px solid white; ">
+                        <th style="text-align: center; padding: 18px;">ชื่อฟังก์ชัน</th>
+                        <th style="text-align: center;">ความหมาย</th>
+                        <th >ตัวอย่าง</th>
+                        <th >ผลลัพธ์</th>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">abs()</td>
+                        <td>คืนค่าสัมบูรณ์ของตัวเลข</td>
+                        <td>abs(-3)</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">max()</td>
+                        <td>คืนค่ามากสุดของตัวเลข</td>
+                        <td>max(20,10)</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">min()</td>
+                        <td>คืนค่าน้อยสุดของตัวเลข</td>
+                        <td>min(20,10)</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">pow()</td>
+                        <td>คืนค่าเลขยกกำลัง</td>
+                        <td>pow(3,2)</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">round()</td>
+                        <td>ปัดเศษตัวเลขตามจำนวนหลักที่กำหนด</td>
+                        <td>round(25.43985,2)</td>
+                        <td>25.44</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">sum()</td>
+                        <td>คืนค่าผลรวม</td>
+                        <td>x = (1,2,3)<br>print(sum(x))</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">bin()</td>
+                        <td>คืนค่าเลขฐานสอง</td>
+                        <td>bin(10)</td>
+                        <td>0b1010</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">hex()</td>
+                        <td>คืนค่าเลขฐานสิบหก</td>
+                        <td>hex(10)</td>
+                        <td>0xa</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">oct()</td>
+                        <td>คืนค่าเลขฐานแปด</td>
+                        <td>oct(10)</td>
+                        <td>0o12</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">bool()</td>
+                        <td>คืนค่าบูลีน</td>
+                        <td>bool(1<2)< /td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">type()</td>
+                        <td>คืนค่าว่าเป็นชนิดข้อมูลประเภทใด</td>
+                        <td>type(123)</td>
+                        <td>(class'int')</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 15px;">len()</td>
+                        <td>คืนค่าความยาวของข้อมูลหรือจำนวนข้อมูลว่ามีกี่ตัว</td>
+                        <td>len("Python")</td>
+                        <td>6</td>
+                    </tr>
+
+                </table>
+
+
+                <hr>
+            </div>
+        </section>
+
+        <section id="module" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">โมดูล (Module)</h3><br>
+                <p style="font-size: 17px">&emsp;โมดูล คือ ไฟล์โปรแกรมที่ถูกสร้างขึ้นเขึ้นมาแยกต่างหากจากไฟล์โปรแกรมหลัก
+                    และจะถูกเรียกใช้งานจากโปรแกรมหลักอีกทีหนึ่ง
+                    ซึ่งไฟล์นี้จะมีนามสกุล .py เหมือนกับโปรแกรมหลัก
+                    โมดูลหนึ่ง ๆ จะประกอบด้วยฟังก์ชัน คลาส หรือตัวแปรกี่ตัวก็ได้ โดยปกติหากมีงานใด ๆ
+                    ก็ตามที่มักจะถูกเรียกทำงานซ้ำ ๆ หรือใช้งานบ่อย ๆ เราจะแตกงานนั้นออกมาเป็นฟังก์ชัน
+                    และนำฟังก์ชันต่าง ๆ ที่เกี่ยวข้องกันมารวมเข้าด้วยกันเป็นโมดูล ตัวอย่างของโมดูล เช่น
+                    โมดูลการวาดรูปกราฟฟิก โมดูลการคำนวณตัวเลข โมดูลคำนวณพื้นที่เรขาคณิตเป็นต้น</p>
+                <hr>
+                <h4>&emsp;วิธีการสร้างโมดูล</h4>
+                <p style="font-size: 17px">ให้สร้างฟังก์ชันการทำงานใด ๆ ตามที่ต้องการ จากนั้นบันทึกไฟล์ให้มีนามสกุล .pv
+                    ตัวอย่างเช่น ร้านอาหารแห่งหนึ่งเปิดให้บริการอาหารไทยและญี่ปุ่น
+                    เมนูอาหารจะเปลี่ยนเดือนละ 1 ครั้ง เมื่อลูกค้าต้องการสั่งอาหารจะต้องแสดงเมนูอาหารทั้ง 2
+                    ประเภททุกครั้ง ดังนั้นเราจึงสร้างโมดูลเมนูอาหารข้นมาดังนี้<br><br>
+                    &emsp;def thaimenu()<br>
+                    &emsp;&emsp;print("1 . ต้มยำกุ้ง 69 บาท")<br>
+                    &emsp;&emsp;print("2 . ส้มตำไทย 50 บาท")<br>
+                    &emsp;&emsp;print("3 . ผัดไทยกุ้งสด 59 บาท")<br>
+                    &emsp;&emsp;print("4 . ข้าวตังหน้าตั้ง 45 บาท")<br><br>
+                    &emsp;def japanesemenu()<br>
+                    &emsp;&emsp;print("1 . ราเมงซุปมิโสะ 89 บาท")<br>
+                    &emsp;&emsp;print("2 . แซลมอนเทอริยากิ 120 บาท")<br>
+                    &emsp;&emsp;print("3 . ข้าวปั้นหน้ารวม 109 บาท")<br>
+                    &emsp;&emsp;print("4 . หมูทอดทงคัตสึ 99 บาท")<br><br>
+                </p>
+                <hr>
+                <h4>&emsp;วิธีการเรียกใช้งานโมดูล</h4>
+                <p style="font-size: 17px">1. ใช้คำสั่ง Import<br>
+                    เป็นการโหลดโมดูลเข้ามายังโปรแกรมหลักก่อนเรียกใช้งานฟังก์ชันต่าง ๆ ในโมดูลนั้น โดยมีรูปแบบดังนี้ <br>
+                    &emsp;import ชื่อโมดูล<br>
+                    &emsp;&emsp;ชื่อโมดูล.ชื่อฟังก์ชันในโมดูล
+                    <hr>
+                    <b>ตัวอย่าง</b><br>
+                <table style="width:80%;   margin-left: auto; margin-right: auto; padding: 10px;">
+                    <tr style="font-size: 20px; margin-left: auto;">
+                        <td style="width:33%; text-align: center;">Code</td>
+                        <td style="width:33%;"></td>
+                        <td style="width:33%; text-align: center;">ผลลัพธ์</td>
+                    </tr>
+                    <tr>
+                        <td>import mymenu<br>
+                            &emsp;&emsp;print("เมนูอาหารไทย")<br>
+                            &emsp;&emsp;mymenu.thaimenu()<br>
+                            &emsp;&emsp;print("เมนูอาหารญี่ปุ่น")<br>
+                            &emsp;&emsp;mymenu.japanesemenu()
+                        </td>
+
+                        <td style="text-align: center;"><img src="https://s11.gifyu.com/images/ScyFl.png"  width="80%">
+                        </td>
+
+                        <td>เมนูอาหารไทย<br>
+                            1 . ต้มยำกุ้ง 69 บาท<br>
+                            2 . ส้มตำไทย 50 บาท<br>
+                            3. ผัดไทยกุ้งสด 59 บาท<br>
+                            4. ข้าวตังหน้าตั้ง 45 บาท<br>
+                            <br><br>
+                            เมนูอาหารญี่ปุ่น<br>
+                            1 . ราเมงซุปมิโสะ 89 บาท<br>
+                            2 . แซลมอนเทอริยากิ 120 บาท<br>
+                            3 . ข้าวปั้นหน้ารวม 109 บาท<br>
+                            4 . หมูทอดทงคัตสึ 99 บาท<br>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+<div style="text-align: center;">
+                    <button class="input" style="text-align: center;">
+                        <a href="https://www.w3schools.com/python/showpython.asp?filename=demo_module6"
+                            target="_blank">
+                            Try it
+                        </a>
+                    </button>
+                </div>
+                <hr>
+                <p style="font-size: 17px">2. ใช้คำสั่ง from ... import<br>
+                    เป็นการเลือกโหลดเฉพาะฟังก์ชันที่ต้องการใช้งานของโมดูลเข้ามายังโปรแกรมหลัก ก่อนเรียกใช้ฟังก์ชันนั้น ๆ
+                    ให้ทำงาน โดยมีรูปแบบดังนี้ <br>
+                    &emsp;from ชื่อโมดูล import ชื่อฟังก์ชันที่ต้องการใช้งาน<br>
+                    &emsp;&emsp;ชื่อฟังก์ชันในโมดูล
+                    <hr>
+                    <b>ตัวอย่าง</b><br>
+                <table style="width:80%;   margin-left: auto; margin-right: auto; padding: 10px;">
+                    <tr style="font-size: 20px; margin-left: auto;">
+                        <td style="width:33%; text-align: center;">Code</td>
+                        <td style="width:33%;"></td>
+                        <td style="width:33%; text-align: center;">ผลลัพธ์</td>
+                    </tr>
+                    <tr>
+                        <td>from mymenu import thaimenu<br>
+                            &emsp;&emsp;print("เมนูอาหารไทย")<br>
+                            &emsp;&emsp;thaimenu()<br>
+                        </td>
+
+                        <td style="text-align: center;"><img src="https://s11.gifyu.com/images/ScyFl.png"  width="80%">
+                        </td>
+
+                        <td>เมนูอาหารไทย<br>
+                            1 . ต้มยำกุ้ง 69 บาท<br>
+                            2 . ส้มตำไทย 50 บาท<br>
+                            3. ผัดไทยกุ้งสด 59 บาท<br>
+                            4. ข้าวตังหน้าตั้ง 45 บาท
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+
+
+                <hr>
+            </div>
+        </section>
+
+
+
+    </main><!-- End #main -->
+
+
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCLLvS9zEbpiC77JdOl_N0tzzrYtolHoFw",
+      authDomain: "project-python-6f242.firebaseapp.com",
+      databaseURL: "https://project-python-6f242-default-rtdb.firebaseio.com",
+      projectId: "project-python-6f242",
+      storageBucket: "project-python-6f242.appspot.com",
+      messagingSenderId: "251706770772",
+      appId: "1:251706770772:web:ae1536725eea22006734c1"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
+    console.log(app);
+  
+        //----- Logout code start	  
+        document.getElementById("logout").addEventListener("click", function() {
+            signOut(auth).then(() => {
+                // Sign-out successful.
+                alert('Sign out successful.');
+          window.location.href='./index.html'
+                document.getElementById('logout').style.display = 'none';
+              }).catch((error) => {
+                // An error happened.
+                console.log('An error happened.');
+              });		  		  
+        });
+        //----- End
+  
+  </script>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+
+  var numQues = 4;
+  var numChoi = 4;
+
+  var answers = new Array(4);
+  answers[0] = "1-4";
+  answers[1] = "2-4";
+  answers[2] = "3-1";
+  answers[3] = "4-4";
+
+  function getScore(form) {
+
+    var score = 0;
+    var currElt;
+    var currSelection;
+
+    for (i = 0; i < numQues; i++) {
+      currElt = i * numChoi;
+      for (j = 0; j < numChoi; j++) {
+        currSelection = form.elements[currElt + j];
+        if (currSelection.checked) {
+          if (currSelection.value == answers[i]) {
+            score++;
+            break;
+          }
+        }
+      }
+    }
+
+    if (score >= 0) {
+      alert("คุณได้คะแนนทั้งหมด " + score + " คะแนน");
+      window.location.href='./1-2.html'
+
+    } else {
+      alert("คุณได้คะแนนทั้งหมด " + score + " คะแนน");
+      window.location.href='./1-2.html'
+    }
+
+    score = Math.round(score / numQues * 100);
+    form.percentage.value = score + "%";
+
+    var correctAnswers = "";
+    for (i = 1; i <= numQues; i++) {
+      correctAnswers += i + ". " + answers[i - 1] + "\r\n";
+    }
+    form.solutions.value = correctAnswers;
+  }
+
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>แบบทดสอบก่อนเรียนบทที่ 7</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Tektur&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="home.html">Python Info</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="home.html#hero">หน้าหลัก</a></li>
+          <li><a class="nav-link scrollto" href="home.html#why">ทำไมต้อง Python</a></li>
+          <li><a class="nav-link scrollto" href="home.html#learning">ทำความรู้จักกับ Python</a></li>
+          <li><a class="nav-link scrollto" href="home.html#education">เรียนรู้ภาษา Python</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <button class="book-a-table-btn scrollto d-none d-lg-flex"
+      style="color: white; background-color: black;"
+      name="logout" id="logout">Logout</button>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section class="breadcrumbs">
+      <div class="container"  >
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>แบบทดสอบก่อนเรียนบทที่ 7</h2>
+          <ol>
+            <li><a href="6-4.html">ย้อนกลับ</a></li>
+            <li><a href="7-2.html">หน้าถัดไป</a></li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="inner-page">
+      <div class="container"  >
+        <h2>บทที่ 7 Loop</h2>
+        <form name="quiz">
+          <div id="radio-buttons">
+
+            <hr>
+            <p style="font-size: 20px">1. สิ่งสำคัญในการใช้งานคำสั่ง while loop นั้นจะประกอบไปด้วยอะไร</p>
+
+            <div class="radio">
+              <input type="radio" id="radio-1" name="q1" value="1-1" />
+              <label for="radio-1"></label>
+              <span>ก. การวางแผน</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-2" name="q1" value="1-2" />
+              <label for="radio-2"></label>
+              <span>ข. สร้างสรรค์</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-3" name="q1" value="1-3" />
+              <label for="radio-3"></label>
+              <span>ค. สรุป</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-4" name="q1" value="1-4" />
+              <label for="radio-4"></label>
+              <span>ง. การกำหนดเงื่อนไข</span>
+            </div>
+
+
+            <hr>
+            <p style="font-size: 20px">2. โปรแกรมทำงานในลูปตลอดไปเรียกว่าอะไร</p>
+
+            <div class="radio">
+              <input type="radio" id="radio-5" name="q2" value="2-1" />
+              <label for="radio-5"></label>
+              <span>ก. Loop</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-6" name="q2" value="2-2" />
+              <label for="radio-6"></label>
+              <span>ข. Boolean</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-7" name="q2" value="2-3" />
+              <label for="radio-7"></label>
+              <span>ค. Counting</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-8" name="q2" value="2-4" />
+              <label for="radio-8"></label>
+              <span>ง. Infinity loop</span>
+            </div>
+
+            <hr>
+            <p style="font-size: 20px">3. ในภาษา C สามารถใช้ฟังก์ชันอะไรในการสุ่มตัวเลข</p>
+
+            <div class="radio">
+              <input type="radio" id="radio-9" name="q3" value="3-1" />
+              <label for="radio-9"></label>
+              <span>ก. random</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-10" name="q3" value="3-2" />
+              <label for="radio-10"></label>
+              <span>ข. Secret</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-11" name="q3" value="3-3" />
+              <label for="radio-11"></label>
+              <span>ค. Srand</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-12" name="q3" value="3-4" />
+              <label for="radio-12"></label>
+              <span>ง. Time</span>
+            </div>
+
+            <hr>
+            <p style="font-size: 20px">4. รูปแบบคำสั่งForมีอะไรบ้าง</p>
+
+            <div class="radio">
+              <input type="radio" id="radio-13" name="q4" value="4-1" />
+              <label for="radio-13"></label>
+              <span>ก. ค่าเริ่มต้น</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-14" name="q4" value="4-2" />
+              <label for="radio-14"></label>
+              <span>ข. เงื่อนไข</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-15" name="q4" value="4-3" />
+              <label for="radio-15"></label>
+              <span>ค. การเพิ่มค่าหรือลดค่า</span>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="radio-16" name="q4" value="4-4" />
+              <label for="radio-16"></label>
+              <span>ง. ถูกทุกข้อ</span>
+            </div>
+
+          </div>
+
+
+          <input type="button" class="input" value="Submit" onClick="getScore(this.form)">
+        </form>
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCLLvS9zEbpiC77JdOl_N0tzzrYtolHoFw",
+    authDomain: "project-python-6f242.firebaseapp.com",
+    databaseURL: "https://project-python-6f242-default-rtdb.firebaseio.com",
+    projectId: "project-python-6f242",
+    storageBucket: "project-python-6f242.appspot.com",
+    messagingSenderId: "251706770772",
+    appId: "1:251706770772:web:ae1536725eea22006734c1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const auth = getAuth();
+  console.log(app);
+
+	  //----- Logout code start	  
+	  document.getElementById("logout").addEventListener("click", function() {
+		  signOut(auth).then(() => {
+			  // Sign-out successful.
+			  alert('Sign out successful.');
+        window.location.href='./index.html'
+			  document.getElementById('logout').style.display = 'none';
+			}).catch((error) => {
+			  // An error happened.
+			  console.log('An error happened.');
+			});		  		  
+	  });
+	  //----- End
+
+</script>
+</html>

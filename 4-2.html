@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .testimonial-quote {
+        font-size: 16px;
+    }
+
+    .testimonial-quote blockquote {
+        /* Negate theme styles */
+        border: 0;
+        margin: 0;
+        padding: 0;
+        background: none;
+        color: white;
+        font-size: 16px;
+        font-style: italic;
+        margin: 0;
+        position: relative;
+        z-index: 600;
+    }
+
+    .testimonial-quote blockquote * {
+        box-sizing: border-box;
+    }
+
+
+    .testimonial-quote blockquote p:first-child:before {
+        content: '\201C';
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        opacity: .3;
+        position: absolute;
+        top: -.4em;
+        left: -.2em;
+        text-shadow: none;
+        z-index: -300;
+    }
+
+    .testimonial-quote {
+        position: relative;
+    }
+
+    .testimonial-quote .quote-container {
+        padding-left: 160px;
+    }
+
+    .testimonial-quote.right .quote-container {
+        padding-left: 0;
+        padding-right: 160px;
+    }
+
+    .testimonial-quote.right img {
+        left: auto;
+        right: 0;
+    }
+
+    .testimonial-quote.right cite {
+        text-align: right;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>บทที่ 1 ภาษาคอมพิวเตอร์ไพทอนคือ</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Tektur&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0"><a href="home.html">Python Info</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="home.html#hero">หน้าหลัก</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#why">ทำไมต้อง Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#learning">ทำความรู้จักกับ Python</a></li>
+                    <li><a class="nav-link scrollto" href="home.html#education">เรียนรู้ภาษา Python</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+            <button class="book-a-table-btn scrollto d-none d-lg-flex"
+      style="color: white; background-color: black;"
+      name="logout" id="logout">Logout</button>
+
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <section class="breadcrumbs">
+            <div class="container"  >
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>บทที่ 4 ชนิดของข้อมูล</h2>
+                    <ol>
+                        <li><a href="4-1.html">ย้อนกลับ</a></li>
+                        <li><a href="4-3.html">หน้าถัดไป</a></li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="mean" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">ความหมายของชนิดของข้อมูล</h3><br>
+                <p style="font-size: 17px">&emsp;คือ สิ่งที่ใช้กำหนดลักษณะและขอบเขตของข้อมูลนั้น ๆ
+                    โดยข้อมูลที่มีชนิดของข้อมูลแตกต่างกัน
+                    ก็จะเก็บข้อมูลได้ในลักษณะที่ต่างกัน และขอบเขตของข้อมูลที่เก็บได้ก็จะไม่เท่ากันด้วย</p>
+                <center><iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/le-g9Z-FqKI?si=NNtNmvuWWoKRZpxM" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></center>
+                <hr>
+            </div>
+        </section>
+
+        <section id="type" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">ประเภทของชนิดข้อมูล</h3><br>
+                <h4>&emsp;ชนิดของข้อมูลประเภทตัวเลข (Numeric)</h4>
+
+                <h4>&emsp;&emsp;จำนวนเต็ม (Integer)</h4>
+                <p style="font-size: 17px"> &emsp;&emsp;เป็นชนิดข้อมูลเลขจำนวนเต็มบวกหรือลบ จะเป็นเลขฐานสิบ
+                    เลขฐานสอง(นำหน้าตัวเลขด้วย 0b) เลขฐานแปด(นำหน้าตัวเลขด้วย 0o) หรือเลขฐานสิบหก(นำหน้าตัวเลขด้วย 0x)
+                    ก็ได้</p>
+
+                <h4>&emsp;&emsp;จำนวนทศนิยม (Floating point numbers)</h4>
+                <p style="font-size: 17px"> &emsp;&emsp;เป็นชนิดข้อมูลแบบเลขทศนิยมหรือบางทีเรียกว่า เลขจำนวนจริง (real
+                    number) เช่น 10.0 15.33 20.000 2.99e2(มีค่าเท่ากับ 299.0) 9.109e-2 (มีค่าเท่ากับ 0.09109) เป็นต้น
+                </p>
+
+                <h4>&emsp;&emsp;จำนวนเชิงซ้อน (Complex numbers)</h4>
+                <p style="font-size: 17px"> &emsp;&emsp;เป็นชนิดข้อมูลแบบเลขจำนวนเชิงซ้อน
+                    โดยเลขจำนวนเชิงซ้อนเกิดจากการนำจำนวนจริง (real) และจำนวนจินตภาพ (Imaginary) มารวมกัน
+                    รูปแบบของจำนวนเชิงซ้อนคือ a+bi โดย a คือ ส่วนของจำนวนจริง และ b คือส่วนของจำนวนจินตภาพ
+                    ในไพฑอนจะนำตัวอักษร j หรือ J มากำกับต่อท้ายค่าที่เป็นจำนวนจินตภาพ เช่น -4.5+2j จะเรียก -4.5
+                    ว่าเป็นส่วนของเลขจำนวนจริง และ 2j เป็นส่วนของจำนวนจินตภาพ</p>
+
+                <div style="width: 960px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px;">
+
+                    <hr style="margin: 20px auto; opacity: .5;">
+
+                    <h3>ชนิดข้อมูลตรรกะ (Boolean)</h3>
+                    <div class="testimonial-quote group">
+                        <div class="quote-container"  >
+                            <blockquote>
+                                <p>เป็นชนิดข้อมูลที่มีได้เพียง 2 ค่า คือ True และ False</p>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 20px auto; opacity: .5;">
+
+                    <h3>ชนิดข้อมูลสายอักคระ (String)</h3>
+                    <div class="testimonial-quote group">
+                        <div class="quote-container"  >
+                            <blockquote>
+                                <p>คือข้อความหรือกลุ่มตัวอักษร โดยสตริงจะถูก ครอบไว้ด้วยเครื่องหมาย "" หรือ '' เช่น
+                                    "Hello" 'Hello' เป็นต้น โดยแต่ละตัวอักษรแต่ละตัวในตริงจะมีตำแหน่ง index
+                                    ที่แตกต่างกันออกไป</p>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 20px auto; opacity: .5;">
+
+                    <h3>ชนิดข้อมูลรายการ (List)</h3>
+                    <div class="testimonial-quote group">
+                        <div class="quote-container"  >
+                            <blockquote>
+                                <p>เป็นชนิดข้อมูลที่สามารถเก็บข้อมูลประเภทเดียวกันหรือต่างประเภทกันก้ได้
+                                    และข้อมูลในลิสต์สามารถซ้ำกันได้ หากภายหลังข้อมูลมีการเปลี่ยนแปลง
+                                    ก็สามารถแก้ไขข้อมูลในลิสต์ได้
+                                    ข้อมูลในลิสต์จะมีลำดับที่แน่นอนว่าข้อมูลใดอยู่ในตำแหน่งไหน เนื่องจากมีตำแหน่ง index
+                                    กำกับข้อมูลอยู่ โดยชนิดข้อมูลประเภทนี้จะถูกครอบไว้ด้วยเครื่องหมาย [] เช่น<br>
+                                    &emsp;&emsp;&emsp;&emsp;price = [550,1350,540,400,30000]<br>
+                                    &emsp;&emsp;&emsp;&emsp;fruit = ["apple","orange","kiwi"]<br>
+                                    &emsp;&emsp;&emsp;&emsp;number = [3,6,2]</p>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 20px auto; opacity: .5;">
+
+                    <h3>เซต (Set)</h3>
+                    <div class="testimonial-quote group">
+                        <div class="quote-container"  >
+                            <blockquote>
+                                <p>เป็นชนิดข้อมูลที่ไม่มีตำแหน่ง index กำกับข้อมูลอยู่
+                                    กังนั้นจึงไม่มีลำดับที่แน่นอนว่าข้อมูลใดอยู่ในตำแหน่งไหน
+                                    เมื่อสร้างเซตแล้วจะไม่สามารถแก้ไขข้อมูลในเซตได้
+                                    แต่สามารถเพิ่มค่าข้อมูลลงไปใหม่ในเซตได้
+                                    โดยชนิดขอข้อมูลประเภทนี้จะถูกครอบไว้ด้วยเครื่องหมาย {} เช่น<br>
+                                    &emsp;&emsp;day_set = {"Monday" , "Tuseday" , "Wednesday" , "Thursday" , "Friday" ,
+                                    "Saturday" , "Sunday"}</p>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 20px auto; opacity: .5;">
+
+                    <h3>ดิกชันนารี (Dictionaries)</h3>
+                    <div class="testimonial-quote group">
+                        <div class="quote-container"  >
+                            <blockquote>
+                                <p>เป็นชนิดข้อมูลที่เก็บข้อมูลในรูปแบบ Key และ Value จะสัมพันธ์กัน กล่าวคือ จะใช้ Key
+                                    เป็น Index
+                                    ในการเข้าถึงข้อมูล (Value) แต่ละตัว ซึ่งค่า Key ต้องไม่ซ้ำกัน
+                                    ข้อมูลชนิดนี้เมื่อสร้างขึ้นแล้วสามารถเปลี่ยนแปลงแก้ไขได้
+                                    โดยชนิดข้อมูลประเภทนี้จะถูกครอบไว้ด้วยเครื่องหมาย {} เช่น<br>
+                                    &emsp;&emsp;&emsp;&emsp;rating_dict = {<br>
+                                    &emsp;&emsp;&emsp;&emsp;"A" = "Very good" ,<br>
+                                    &emsp;&emsp;&emsp;&emsp;"B" = "Good" ,<br>
+                                    &emsp;&emsp;&emsp;&emsp;"C" = "Poor" }<br>
+                                    <b>ผลลัพธ์ที่ได้</b><br>
+                                    &emsp;&emsp;&emsp;&emsp;{'A':'Very good', 'B':'Good', 'C':'poor'}
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <hr style="margin: 20px auto; opacity: .5;">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="check" class="inner-page">
+            <div class="container"  >
+                <hr>
+                <h3><img src="https://i0.wp.com/hyperallergic-newspack.s3.amazonaws.com/uploads/2015/02/computer-8bit-large11.gif?resize=256%2C256&quality=100"
+                        width="50">การตรวจสอบชนิดข้อมูล</h3><br>
+                <p style="font-size: 17px">&emsp;การจะตรวจสอบว่าข้อมูลนั้น ๆ เป็นชนิดข้อมูลประเภทใด
+                    ทำได้โดยเรียกใช้ฟังก์ชัน type() ดังรูปแบบต่อไปนี้<br>
+                    &emsp;&emsp;&emsp;&emsp;a = 5<br>
+                    &emsp;&emsp;&emsp;&emsp;b = 20.25<br>
+                    &emsp;&emsp;&emsp;&emsp;c = -4.5+2j<br>
+                    &emsp;&emsp;&emsp;&emsp;d = "hello"<br>
+                    &emsp;&emsp;&emsp;&emsp;e = ["apple","orange","kiwi"]<br>
+                    &emsp;&emsp;&emsp;&emsp;f = {"red","green","blue","pink"}<br>
+                    &emsp;&emsp;&emsp;&emsp;g = {"Monday" , "Tuseday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"
+                    , "Sunday"}<br><br>
+                    print(type(a)) print(type(b)) print(type(c)) print(type(d)) print(type(e)) print(type(f)) print(type(g))<br><br>
+                    <b>ผลลัพธ์ที่ได้</b><br>
+                    &emsp;&emsp;&emsp;&emsp;(class'int') (class'float') (class'complex') (class'str') (class'list')
+                    (class'tuple')
+                    (class'set')
+                </p>
+<div style="text-align: center;">
+                    <button class="input" style="text-align: center;">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_numbers_convert"
+                            target="_blank">
+                            Try it
+                        </a>
+                    </button>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCLLvS9zEbpiC77JdOl_N0tzzrYtolHoFw",
+      authDomain: "project-python-6f242.firebaseapp.com",
+      databaseURL: "https://project-python-6f242-default-rtdb.firebaseio.com",
+      projectId: "project-python-6f242",
+      storageBucket: "project-python-6f242.appspot.com",
+      messagingSenderId: "251706770772",
+      appId: "1:251706770772:web:ae1536725eea22006734c1"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
+    console.log(app);
+  
+        //----- Logout code start	  
+        document.getElementById("logout").addEventListener("click", function() {
+            signOut(auth).then(() => {
+                // Sign-out successful.
+                alert('Sign out successful.');
+          window.location.href='./index.html'
+                document.getElementById('logout').style.display = 'none';
+              }).catch((error) => {
+                // An error happened.
+                console.log('An error happened.');
+              });		  		  
+        });
+        //----- End
+  
+  </script>
+</html>
